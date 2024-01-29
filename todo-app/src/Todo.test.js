@@ -1,14 +1,14 @@
 import React from 'react';
-import App from './App';
+import Todo from './Todo';
 import { render } from "@testing-library/react";
 
 // Smoke test
 it("renders without crashing", function () {
-  render(<App />);
+  render(<Todo />);
 });
 
 // Snap test
 it("matches snapshot", function () {
-  const { asFragment } = render(<App />);
-  expect(asFragment()).toMatchSnapshot();
-});
+    const { asFragment } = render(<Todo />);
+    expect(asFragment()).toMatchSnapshot();
+  });
