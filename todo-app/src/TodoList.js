@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Todo from './Todo';
-//import NewTodoForm from './NewTodoForm';
+import NewTodoForm from './NewTodoForm';
 import { v4 as uuid } from "uuid";
 
 const TodoList = () => {
@@ -14,7 +14,7 @@ const TodoList = () => {
     return (
         <div>
             <h2>Todo List</h2>
-            {/* <NewTodoForm addBox={addBox} /> */}
+            <NewTodoForm addTodo={addTodo} />
             <div>
                 {todos.map(({id, task}) => 
                 <Todo
